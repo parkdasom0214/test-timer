@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>timer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>
+    <img src="./img/logo-weniv.png" alt="">
+    <span class="logo-hidden">weniv</span>
+  </h1>
+  <div class="container">
+    <main>
+
+          <h2>TIMER</h2>
+          
+          <section class="timer-labels">
+              <span>HRS</span>
+              <span>MIN</span>
+              <span>SEC</span>
+          </section>
+          
+          <time class="timer-display" role="timer" aria-live="polite" datetime="PT0H0M0S">
+              <output class="time-unit">
+                  <span class="time-value" id="hours">00</span>
+              </output>
+              <span class="time-separator">
+                  <img src="./img/icon-dot.png" alt="">
+              </span>
+              <output class="time-unit">
+                  <span class="time-value" id="minutes">00</span>
+              </output>
+              <span class="time-separator">
+                  <img src="./img/icon-dot.png" alt="">
+              </span>
+              <output class="time-unit">
+                  <span class="time-value" id="seconds">00</span>
+              </output>
+          </time>
+          
+          <section class="timer-controls">
+              <button type="button" class="start-btn">
+                  <img src="./img/icon-play.svg" alt="">
+                  START
+              </button>
+              <button type="button" class="reset-btn">
+                  <img src="./img/icon-reset.svg" alt="">
+                  RESET
+              </button>
+          </section>
+
+  </main>
+    <footer>ⓒ WENIV Corp.</footer>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
